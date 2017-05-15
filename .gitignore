@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+.idea/
+index.js
+lambda.zip
+script/*
