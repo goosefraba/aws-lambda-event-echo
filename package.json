@@ -1,0 +1,14 @@
+{
+  "name": "aws-lambda-event-echo",
+  "version": "0.0.1",
+  "scripts": {
+    "zip": "tsc && rm -rf lambda.zip && zip -r lambda.zip index.js lib node_modules",
+    "deploy": "npm run zip && scripts/update_all.sh default"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "0.0.5",
+    "@types/node": "^6.0.54"
+  },
+  "devDependencies": {
+  }
+}
